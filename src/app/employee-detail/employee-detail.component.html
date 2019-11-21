@@ -1,0 +1,26 @@
+<app-header [tittle]="tittle" [backButton] = "link"></app-header>
+
+<div class="container">
+  <nav class="navbar navbar-defalut">
+      <div class="col-lg-6">
+          <h3>Employee ID : {{employee.id}}</h3>
+      </div>
+      <div class="col-lg-6 text-right ">
+          <a (click)="fliptoresume(employee)">Flip to Resume</a>
+      </div>
+  </nav>
+  <div class="card">
+      <div class="card-body">
+          <ul class="list-group list-group-flush">
+              <li class="list-group-item">Name: {{employee.name}}</li>
+              <li class="list-group-item">Address: {{employee.address}}</li>
+              <li class="list-group-item">Phone: {{employee.phone}}</li>
+              <li class="list-group-item">Email: {{employee.email}}</li>
+              <li class="list-group-item">Website: {{employee.website}}</li>
+              <li class="list-group-item">Zip Code: {{employee.zipcode}}</li>
+              <li class="list-group-item">City: {{employee.city}}</li>
+          </ul>
+      </div>
+  </div>
+
+</div>

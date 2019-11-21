@@ -1,0 +1,10 @@
+<nav class="navbar navbar-light  bg-nav">
+  <div class="container-fluid">
+      <div *ngIf="backButton">
+          <button  type="button" class="btn btn-sm btn-outline-secondary pull-left" (click)="backBtn()" > < Back</button>
+      </div>
+      <div class="col text-center navbar-brand">
+          {{tittle}}
+      </div>
+  </div>
+</nav>
